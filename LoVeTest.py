@@ -9,6 +9,7 @@ import pandas as pd
 
 
 url0 = 'https://opendap1.nodc.no'
+
 catalog = url0+'/opendap/hyrax/projects/LoVeOcean/'
 
 # List the nodes
@@ -49,4 +50,5 @@ plt.title('Data status from LoVe production server')
 plt.xlabel('Time')
 plt.yticks([])  # Hide y-axis ticks since they are constant
 plt.legend()
+plt.savefig('DataStatus.png')
 plt.show()
